@@ -1,10 +1,5 @@
 # Terraform AWS Project 
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/hashicorp/terraform-website/master/content/source/assets/images/logos/terraform-logo.png" alt="Terraform Logo" height="80"/>
-  <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS Logo" height="80"/>
-</p>
-
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-blue?logo=terraform)
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?logo=amazon-aws)
 ![License](https://img.shields.io/badge/License-MIT-green)
@@ -36,11 +31,11 @@ terraform-aws-project/ ├── main.tf # Root configuration ├── variable
    terraform init
 Plan the infrastructure
 
-bash
+```bash
 terraform plan
 Apply changes
 
-bash
+``bash
 terraform apply
 Outputs After apply, Terraform will display:
 
@@ -53,7 +48,7 @@ ec2_public_ip → Public IP of EC2 instance
 s3_bucket_name → S3 bucket name
 
 Connecting to EC2
-bash
+```bash
 ssh -i ~/Desktop/server-key.pem ec2-user@<ec2_public_ip>
 Terraform Snippets
 VPC Module (modules/vpc/main.tf)
