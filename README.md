@@ -36,12 +36,11 @@ terraform plan
 ```
 
 Apply changes
-``bash
+```bash
 terraform apply
 ```
 
 Outputs After apply, Terraform will display:
-
 ```
 vpc_id → VPC ID
 
