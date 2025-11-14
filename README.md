@@ -29,17 +29,20 @@ terraform-aws-project/ ├── main.tf # Root configuration ├── variable
 1. **Initialize Terraform**
    ```bash
    terraform init
+   
 Plan the infrastructure
-
 ```bash
 terraform plan
-Apply changes
 ```
 
+Apply changes
 ``bash
 terraform apply
+```
+
 Outputs After apply, Terraform will display:
 
+```
 vpc_id → VPC ID
 
 public_subnet_id → Subnet ID
