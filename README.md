@@ -34,6 +34,7 @@ Plan the infrastructure
 ```bash
 terraform plan
 Apply changes
+```
 
 ``bash
 terraform apply
@@ -46,6 +47,7 @@ public_subnet_id → Subnet ID
 ec2_public_ip → Public IP of EC2 instance
 
 s3_bucket_name → S3 bucket name
+```
 
 Connecting to EC2
 ```bash
@@ -167,6 +169,9 @@ resource "random_id" "bucket_suffix" {
 output "bucket_name" {
   value = aws_s3_bucket.logs.bucket
 }
+
+```
+
 Why This Project Matters
 Demonstrates modular Terraform design (VPC, EC2, SG, S3).
 
